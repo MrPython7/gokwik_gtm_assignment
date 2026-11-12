@@ -32,6 +32,6 @@ try:
         
 except Exception as e:
     if WEBHOOK_URL:
-        requests.post(WEBHOOK_URL, json={"content": f"🚨 Alert: News Tracker failed! Error: {str(e)}"})
+        requests.post(WEBHOOK_URL, json={"content": f" Alert: News Tracker failed! Error: {str(e)}"})
     else:
         print(f"Failed to run tracker: {e}")
